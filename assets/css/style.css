@@ -137,75 +137,89 @@ body {
     border: 1px solid #f7f7f9;
     background-color: #fff;
   }
-  .card_img{
+
+  .card_img {
     width: 295px;
     height: 220px;
   }
-  .project_card h2{
+
+  .project_card h2 {
     font-size: 32px;
-    color: #172B4D;
+    color: #172b4d;
     font-weight: bold;
   }
-  .card_details{
+
+  .card_details {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .card_sub_title{
+
+  .card_sub_title {
     display: flex;
     gap: 10px;
     font-size: 13px;
   }
-  .card_sub_title p{
-    color: #172B4D;
+
+  .card_sub_title p {
+    color: #172b4d;
     font-weight: bold;
   }
-  .card_sub_title ul{
+
+  .card_sub_title ul {
     display: flex;
     gap: 10px;
     padding-left: 10px;
   }
-  .card_sub_title ul li{
-    margin: 0 10px;
-    color: #7A869A;
+
+  .card_list li {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6070ff;
+    background-color: #ebebff;
+    padding: 4px 12px;
+    border-radius: 8px;
   }
-  .card_details p{
+
+  .card_sub_title ul li {
+    margin: 0 10px;
+    color: #7a869a;
+  }
+
+  .card_details p {
     font-size: 15px;
     font-weight: 400;
     color: #344563;
   }
-.card_list{
-  display: flex;
-  gap: 10px;
-  list-style: none;
-}
-.card_list li{
-  font-size: 12px;
-  font-weight: 500;
-  color: #6070FF;
-  background-color: #EBEBFF;
-  padding: 4px 12px;
-  border-radius: 8px;
-}
-.card_details button {
-  width: 126px;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #396DF2;
-  font-size: 17px;
-  font-weight: 500px;
-  color: #396DF2;
-}
+
+  .card_list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+  }
+
+
+  .card_details button {
+    width: 126px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #396df2;
+    font-size: 17px;
+    font-weight: 500px;
+    color: #396df2;
+  }
+
   /* About section */
   .about {
     padding: 20px;
   }
-  .about_text{
+
+  .about_text {
     padding-top: 40px;
   }
-  .about_text h2{
+
+  .about_text h2 {
     font-size: 40px;
-    
   }
 
   .abt_cards2 {
@@ -269,6 +283,7 @@ body {
     letter-spacing: 0%;
     width: 327px;
   }
+
   .about_text h4 {
     color: #6070ff;
     gap: 10px;
@@ -307,12 +322,13 @@ body {
     padding: 50px 0;
     border-top-left-radius: 15%;
   }
-.contact_heading{
-  font-size: 40px;
-  font-weight: 700;
-  color: #ffffff;
-  text-align: center;
-}
+
+  .contact_heading {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+  }
 
   .contact p {
     text-align: center;
