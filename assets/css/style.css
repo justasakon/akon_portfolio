@@ -130,16 +130,82 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 327px;
-    height: 552px;
+    height: 596px;
     border-radius: 16px;
     gap: 15px;
-    padding: 16px;
+    padding: 20px 16px;
     border: 1px solid #f7f7f9;
+    background-color: #fff;
   }
-
+  .card_img{
+    width: 295px;
+    height: 220px;
+  }
+  .project_card h2{
+    font-size: 32px;
+    color: #172B4D;
+    font-weight: bold;
+  }
+  .card_details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card_sub_title{
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .card_sub_title p{
+    color: #172B4D;
+    font-weight: bold;
+  }
+  .card_sub_title ul{
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+  }
+  .card_sub_title ul li{
+    margin: 0 10px;
+    color: #7A869A;
+  }
+  .card_details p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #344563;
+  }
+.card_list{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.card_list li{
+  font-size: 12px;
+  font-weight: 500;
+  color: #6070FF;
+  background-color: #EBEBFF;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+.card_details button {
+  width: 126px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #396DF2;
+  font-size: 17px;
+  font-weight: 500px;
+  color: #396DF2;
+}
   /* About section */
   .about {
-    padding: 30px;
+    padding: 20px;
+  }
+  .about_text{
+    padding-top: 40px;
+  }
+  .about_text h2{
+    font-size: 40px;
+    
   }
 
   .abt_cards2 {
@@ -179,79 +245,30 @@ body {
     padding: 10px;
   }
 
+  .contact img {
+    margin-left: 51px;
+    margin-bottom: -20px;
+  }
+
+  .recelipse img {
+    width: 30px;
+  }
+
   .abt_cards1 ul li img {
     width: 48px;
     height: 48px;
-  }
-
-  .project_card .pcard_list {
-    display: flex;
-    gap: 20px;
-    padding: 20px 5px;
-  }
-
-  .project_card .pcard_list li {
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 3%;
-    color: #6070ff;
-    background-color: #ebebff;
-    padding: 5px 15px;
-    border-radius: 8px;
-  }
-
-  .project_card .sub ul li {
-    color: #acb3bf;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 5px 15px;
-    margin-right: 20px;
-    flex-wrap: wrap;
-  }
-
-  .project_card .sub {
-    display: flex;
   }
 
   .about_text ul {
     display: flex;
     gap: 20px;
     list-style: none;
-    margin-top: 15px;
-    margin-top: 15px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 346px;
     letter-spacing: 0%;
     width: 327px;
   }
-
-  .project_card .sub ul {
-    display: flex;
-  }
-
-  .project_card button {
-    width: 126px;
-    height: 48px;
-    border-radius: 8px;
-    padding: 12px;
-    border: 1px solid#6070FF;
-    font-weight: 500px;
-    color: #396df2;
-    font-size: 17px;
-    text-align: center;
-    background-color: #fff;
-  }
-
-  .about_text h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #172b4d;
-    line-height: 52px;
-    letter-spacing: 0%;
-    width: 327px;
-  }
-
   .about_text h4 {
     color: #6070ff;
     gap: 10px;
@@ -279,6 +296,9 @@ body {
 
   .about_cards {
     margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
   }
 
   .contact {
@@ -287,16 +307,12 @@ body {
     padding: 50px 0;
     border-top-left-radius: 15%;
   }
-
-  .contact h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 52px;
-    width: 327px;
-    text-align: center;
-    vertical-align: center;
-  }
+.contact_heading{
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
 
   .contact p {
     text-align: center;
@@ -320,11 +336,11 @@ body {
     height: 48px;
     background-color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
   }
 
   .contact form textarea {
-    width: 327px;
+    width: 32 7px;
     height: 170px;
     background-color: #fff;
     border: none;
@@ -350,11 +366,6 @@ body {
     left: 0;
   }
 
-  .contact img {
-    margin-left: 50px;
-    margin-bottom: -20px;
-  }
-
   .contact_pic {
     gap: 20px;
     margin-top: -30px;
@@ -375,10 +386,6 @@ body {
     gap: 5px;
     justify-content: center;
     align-items: center;
-  }
-
-  .recelipse img {
-    width: 30px;
   }
 
   .recelipse img:nth-child(2) {
@@ -421,5 +428,47 @@ body {
 
   blockquote b {
     color: #fff;
+  }
+
+  /* mobile menu */
+  .desktop_menu.active {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    background-color: #396df2;
+    width: 100%;
+    height: 100%;
+    opacity: 97%;
+  }
+
+  .desktop_menu.active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    padding: 30px 29px;
+  }
+
+  .desktop_menu.active ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .mobile_menu.active p:nth-child(1) {
+    rotate: 45deg;
+    position: relative;
+    top: 8px;
+  }
+
+  .mobile_menu.active p:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile_menu.active p:nth-child(3) {
+    rotate: -45deg;
+    position: relative;
+    top: -8px;
   }
 }
