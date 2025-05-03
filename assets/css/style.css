@@ -198,7 +198,6 @@ body {
     list-style: none;
   }
 
-
   .card_details button {
     width: 126px;
     padding: 12px;
@@ -489,10 +488,11 @@ body {
     top: -8px;
   }
 }
-  /* Define tablet screen styling */
-@media (min-width:768px) and (max-width: 1024px) {
-   /* header styling */
-   .logo a {
+
+/* Define tablet screen styling */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* header styling */
+  .logo a {
     text-decoration: none;
     font-size: 25px;
     color: #6070ff;
@@ -599,8 +599,8 @@ body {
   }
 
   .project_cards {
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     gap: 25px;
@@ -678,7 +678,6 @@ body {
     gap: 10px;
     list-style: none;
   }
-
 
   .card_details button {
     width: 126px;
@@ -792,7 +791,7 @@ body {
 
   .about_cards {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 40px;
     justify-content: center;
     align-items: center;
@@ -872,7 +871,7 @@ body {
     width: 90px;
     display: flex;
     flex-direction: column;
-  margin-left: 80%;
+    margin-left: 80%;
   }
 
   .contact_pics {
