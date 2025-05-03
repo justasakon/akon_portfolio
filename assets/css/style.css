@@ -971,10 +971,11 @@ body {
     top: -8px;
   }
 }
-  /* Define desktop screen styling */
+
+/* Define desktop screen styling */
 @media (min-width: 1025px) {
-   /* header styling */
-   .logo a {
+  /* header styling */
+  .logo a {
     text-decoration: none;
     font-size: 25px;
     color: #6070ff;
@@ -983,7 +984,7 @@ body {
     padding: 20px;
   }
 
-  .desktop_menu ul{
+  .desktop_menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -991,15 +992,17 @@ body {
     list-style: none;
     margin: 0 20px;
   }
-  .desktop_menu ul li a{
+
+  .desktop_menu ul li a {
     text-decoration: none;
     font-size: 15px;
     color: #344563;
     font-weight: 500;
   }
-  .desktop_menu ul li a:hover{
+
+  .desktop_menu ul li a:hover {
     padding: 10px;
-    border:2px solid #6070ff;
+    border: 2px solid #6070ff;
   }
 
   nav {
@@ -1012,23 +1015,22 @@ body {
   .mobile_menu {
     display: none;
   }
+
   /* Home styling */
   .home {
-    background-image: url(/assets/images/Header\ bg.svg );
+    background-image: url(/assets/images/Header\ bg.svg);
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     border-radius: 5px 5px 5px 90px;
     justify-content: center;
-    padding: 150px 20px;
     left: 260px;
     gap: 12px;
     top: 289px;
     width: 920px;
     padding: 100px 100px;
-border: 1px #EBEBFF;
+    border: 1px #ebebff;
   }
 
   .home h1 {
@@ -1190,7 +1192,6 @@ border: 1px #EBEBFF;
   /* About section */
   .about {
     padding: 20px;
-    
   }
 
   .about_text {
@@ -1327,7 +1328,6 @@ border: 1px #EBEBFF;
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    
   }
 
   .contact form input {
@@ -1336,7 +1336,6 @@ border: 1px #EBEBFF;
     background-color: #fff;
     border: 1px;
     border-radius: 2px;
-   
   }
 
   .contact form textarea {
