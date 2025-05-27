@@ -7,7 +7,32 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .project_cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project_card {
+            flex: 0 1 calc(33.33% - 20px); /* 3 cards per row */
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        @media (max-width: 768px) {
+            .project_card {
+                flex: 0 1 calc(50% - 20px); /* 2 cards per row on smaller screens */
+            }
+        }
+        @media (max-width: 480px) {
+            .project_card {
+                flex: 0 1 100%; /* 1 card per row on very small screens */
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,36 +48,35 @@
                 </div>
                 <div class="desktop_menu" id="desktop_menu">
                     <ul>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="home">
-            <h1>I’m Justas Akon.
-                Glad to see you!</h1>
-                <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-                <h4>LET’S CONNECT</h4>
-                <ul>
-                    <li><a href="#"><img src="./assets/images/twitter (2).svg" alt=""></a></li>
-                    <li><a href="#"><img src="./assets/images/Linkedin icon (1).svg" alt=""></a></li>
-                    <li><a href="#"><img src="./assets/images/medium (2).svg" alt=""></a></li>
-                    <li><a href="https://github.com/justasakon"><img src="./assets/images/github (2).svg" alt=""></a></li>
-                    <li><a href="#"><img src="./assets/images/angellist (2).svg" alt=""></a></li>
-                </ul>
-               
+        <section class="home" id="home">
+            <h1>I’m Justas Akon. Glad to see you!</h1>
+            <p>I’m a software developer! I can help you build a product, feature, or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+            <h4>LET’S CONNECT</h4>
+            <ul>
+                <li><a href="#"><img src="./assets/images/twitter.svg" alt=""></a></li>
+                <li><a href="#"><img src="./assets/images/linkedin.svg" alt=""></a></li>
+                <li><a href="#"><img src="./assets/images/medium.svg" alt=""></a></li>
+                <li><a href="https://github.com/justasakon"><img src="./assets/images/github.svg" alt=""></a></li>
+                <li><a href="#"><img src="./assets/images/angellist.svg" alt=""></a></li>
+            </ul>
         </section>
+
         <section>
             <p class="separation"></p>
         </section>
-        <section class="projects">
+
+        <section class="projects" id="projects">
             <div class="projects_heading">
                 <h2>My Recent Works</h2>
-                <p></p>
             </div>
             <div class="project_cards">
                 <div class="project_card">
@@ -77,166 +101,156 @@
                         <button>See project</button>
                     </div>
                 </div>
+
                 <div class="project_card">
                     <div class="card_img">
-                        <img src="./assets/images/project_cardimg1.svg" alt="">
+                        <img src="./assets/images/project_cardimg2.svg" alt="">
                     </div>
                     <div class="card_details">
-                        <h2>Tonic</h2>
+                        <h2>Project Two</h2>
                         <div class="card_sub_title">
-                            <p>CANOPY</p>
+                            <p>Company Name</p>
                             <ul>
-                                <li>Back end Dev</li>
-                                <li>2025</li>
+                                <li>Front end Dev</li>
+                                <li>2024</li>
                             </ul>
                         </div>
-                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                        <p>Details about Project Two go here.</p>
                         <ul class="card_list">
-                            <li>HTML</li>
+                            <li>React</li>
                             <li>CSS</li>
-                            <li>Javascript</li>
                         </ul>
                         <button>See project</button>
                     </div>
                 </div>
+
                 <div class="project_card">
                     <div class="card_img">
-                        <img src="./assets/images/project_cardimg1.svg" alt="">
+                        <img src="./assets/images/project_cardimg3.svg" alt="">
                     </div>
                     <div class="card_details">
-                        <h2>Tonic</h2>
+                        <h2>Project Three</h2>
                         <div class="card_sub_title">
-                            <p>CANOPY</p>
+                            <p>Company Name</p>
                             <ul>
-                                <li>Back end Dev</li>
-                                <li>2025</li>
+                                <li>Full Stack Dev</li>
+                                <li>2023</li>
                             </ul>
                         </div>
-                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                        <p>Details about Project Three go here.</p>
                         <ul class="card_list">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
                         </ul>
                         <button>See project</button>
                     </div>
                 </div>
+
                 <div class="project_card">
                     <div class="card_img">
-                        <img src="./assets/images/project_cardimg1.svg" alt="">
+                        <img src="./assets/images/project_cardimg4.svg" alt="">
                     </div>
                     <div class="card_details">
-                        <h2>Tonic</h2>
+                        <h2>Project Four</h2>
                         <div class="card_sub_title">
-                            <p>CANOPY</p>
+                            <p>Company Name</p>
                             <ul>
-                                <li>Back end Dev</li>
-                                <li>2025</li>
+                                <li>UI/UX Designer</li>
+                                <li>2022</li>
                             </ul>
                         </div>
-                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                        <p>Details about Project Four go here.</p>
                         <ul class="card_list">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
+                            <li>Figma</li>
+                            <li>Photoshop</li>
                         </ul>
                         <button>See project</button>
                     </div>
                 </div>
             </div>
-
-
-</section>
-        <section class="about">
-<div class="about_text">
-    <h2>About Myself</h2>
-    <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-    <h4>LET'S CONNECT</h4>
-    <div class="container">
-        <ul>
-            <li><a href="#"><img src="./assets/images/twitter (2).svg" alt=""></a></li>
-            <li><a href="#"><img src="./assets/images/Linkedin icon (1).svg" alt=""></a></li>
-            <li><a href="#"><img src="./assets/images/medium (2).svg" alt=""></a></li>
-            <li><a href="https://github.com/justasakon"><img src="./assets/images/github (2).svg" alt=""></a></li>
-            <li><a href="#"><img src="./assets/images/angellist (2).svg" alt=""></a></li>
-        </ul>
-        <button type="button">Get my resume</button>
-
-    </div>
-</div>
-<div class="about_cards">
-    <div class="abt_cards1">
-        <div class="abt_lang">
-            <h3>Languages</h3>
-            <img src="./assets/images/downarrow.svg" alt="">
-        </div>
-       <ul>
-        <li>
-            <img src="./assets/images/js_icon.svg" alt="">
-            <p>Javascript</p>
-        </li>
-        <li>
-            <img src="./assets/images/htnlicon.svg" alt="">
-            <p>HTML</p>
-        </li>
-        <li>
-            <img src="./assets/images/cssicon.svg" alt="">
-            <p>CSS</p>
-        </li>
-       </ul>
-    </div>
-    <div class="abt_cards2">
-        <div class="abt_langs">
-            <h3>Frameworks</h3>
-            <img src="./assets/images/greaterthan.svg" alt="">
-        </div>
-        <div class="abt_langs">
-            <h3>Skills</h3>
-            <img src="./assets/images/greaterthan.svg" alt="">
-        </div>
-    </div>
-</div>
         </section>
-        <section>
+
+        <section class="about" id="about">
+            <div class="about_text">
+                <h2>About Myself</h2>
+                <p>Hello! I’m a software developer! I can help you build a product, feature, or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+                <h4>LET'S CONNECT</h4>
+                <div class="container">
+                    <ul>
+                        <li><a href="#"><img src="./assets/images/twitter.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./assets/images/linkedin.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./assets/images/medium.svg" alt=""></a></li>
+                        <li><a href="https://github.com/justasakon"><img src="./assets/images/github.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./assets/images/angellist.svg" alt=""></a></li>
+                    </ul>
+                    <button type="button">Get my resume</button>
+                </div>
+            </div>
+            <div class="about_cards">
+                <div class="abt_cards1">
+                    <div class="abt_lang">
+                        <h3>Languages</h3>
+                        <img src="./assets/images/downarrow.svg" alt="">
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="./assets/images/js_icon.svg" alt="">
+                            <p>Javascript</p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/html_icon.svg" alt="">
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <img src="./assets/images/css_icon.svg" alt="">
+                            <p>CSS</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="abt_cards2">
+                    <div class="abt_langs">
+                        <h3>Frameworks</h3>
+                        <img src="./assets/images/greaterthan.svg" alt="">
+                    </div>
+                    <div class="abt_langs">
+                        <h3>Skills</h3>
+                        <img src="./assets/images/greaterthan.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_section" id="contact">
             <div class="contact">
-                <img src="./assets/images/Ellipse 12.svg" alt="">
+                <img src="./assets/images/Ellipse_12.svg" alt="">
                 <div class="contact_pic">
-                <img src="./assets/images/Rectangle 4.svg" alt="">
-                <img src="./assets/images/Ellipse 3.svg" alt="">
+                    <img src="./assets/images/Rectangle_4.svg" alt="">
+                    <img src="./assets/images/Ellipse_3.svg" alt="">
                 </div>
-                
-            <h2 class="contact_heading">Contact me</h2>
-             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
-            I’d love to help with it!</p>
-            <form action="https://formspree.io/f/xrbqenbe" method="post">
-            <input type="text" placeholder="Full name" name_input="Full name">
-            <input type="text" placeholder="Email address" required="email_input">
-            <textarea name="" placeholder="write your message here..." id=""></textarea>
-       
-            <div class="contact_pics">
-                <button type="button">Get in touch</button>
-         <div class="recelipse">
-          
-            <img src="./assets/images/Rectangle 7.svg" alt="">
-            <img src="./assets/images/Ellipse 5.svg" alt="">
-         </div>
-
-          </div>
+                <h2 class="contact_heading">Contact me</h2>
+                <p>If you have an application you are interested in developing, a feature that you need built, or a project that needs coding, I’d love to help with it!</p>
+                <form action="https://formspree.io/f/xrbqenbe" method="post">
+                    <input type="text" placeholder="Full name" name="full_name" required>
+                    <input type="email" placeholder="Email address" name="email" required>
+                    <textarea placeholder="Write your message here..." required></textarea>
+                    <div class="contact_pics">
+                        <button type="submit">Get in touch</button>
+                        <div class="recelipse">
+                            <img src="./assets/images/Rectangle_7.svg" alt="">
+                            <img src="./assets/images/Ellipse_5.svg" alt="">
+                        </div>
+                    </div>
+                </form>
             </div>
-            </form>      
         </section>
-        
-       
-    <footer class="footer_main">
-        <blockquote>Done By <marquee behavior="" direction="">
-            <b>JustasAkon</b>
-        </marquee> &copy;Copyright Codegisoft2025</blockquote>
-     <p class="footer_line"></p>
-     
-    </footer>
-        
-       
+
+        <footer class="footer_main">
+            <blockquote>Done By <marquee behavior="scroll" direction="left">
+                <b>JustasAkon</b>
+            </marquee> &copy; Copyright Codegisoft 2025</blockquote>
+            <p class="footer_line"></p>
+        </footer>
     </main>
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

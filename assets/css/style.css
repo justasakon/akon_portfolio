@@ -283,6 +283,11 @@ body {
     width: 327px;
   }
 
+   .about_text ul:hover {
+    background: #6070ff;
+
+   }
+
   .about_text h4 {
     color: #6070ff;
     gap: 10px;
@@ -323,11 +328,12 @@ body {
   }
 
   .contact_heading {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
-    text-align: center;
-    margin-left: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
   }
 
   .contact p {
