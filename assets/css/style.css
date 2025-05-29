@@ -43,7 +43,6 @@ body {
 
   .mobile_menu p {
     padding: 1px 10px;
-    
     background-color: #6070ff;
   }
 
@@ -284,10 +283,9 @@ body {
     width: 327px;
   }
 
-   .about_text ul:hover {
+  .about_text ul:hover {
     background: #6070ff;
-
-   }
+  }
 
   .about_text h4 {
     color: #6070ff;
