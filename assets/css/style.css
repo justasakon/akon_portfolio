@@ -39,11 +39,14 @@ body {
     justify-content: center;
     gap: 6px;
     margin: 10px;
+  
   }
 
   .mobile_menu p {
     padding: 1px 10px;
     background-color: #6070ff;
+   
+
   }
 
   /* Home styling */
@@ -78,6 +81,7 @@ body {
 
   .home h4 {
     color: #6070ff;
+  
   }
 
   .home ul {
@@ -386,6 +390,10 @@ body {
     border: none;
     left: 0;
   }
+   .contact_pics button:hover {
+    background-color: #396df2;
+    color: #fff;
+ }
 
   .contact_pic {
     gap: 20px;

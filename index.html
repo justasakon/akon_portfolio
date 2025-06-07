@@ -8,31 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap" rel="stylesheet">
-    <style>
-        .project_cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .project_card {
-            flex: 0 1 calc(33.33% - 20px); /* 3 cards per row */
-            margin: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            overflow: hidden;
-            background-color: #fff;
-        }
-        @media (max-width: 768px) {
-            .project_card {
-                flex: 0 1 calc(50% - 20px); /* 2 cards per row on smaller screens */
-            }
-        }
-        @media (max-width: 480px) {
-            .project_card {
-                flex: 0 1 100%; /* 1 card per row on very small screens */
-            }
-        }
-    </style>
+
 </head>
 <body>
     <header>
@@ -78,11 +54,15 @@
             <div class="projects_heading">
                 <h2>My Recent Works</h2>
             </div>
-            <div class="project_cards">
+            <div class="project_cards" id="project_cards">
+                <!--
                 <div class="project_card">
+
                     <div class="card_img">
                         <img src="./assets/images/project_cardimg1.svg" alt="">
                     </div>
+
+
                     <div class="card_details">
                         <h2>Tonic</h2>
                         <div class="card_sub_title">
@@ -100,7 +80,12 @@
                         </ul>
                         <button>See project</button>
                     </div>
+
+                    
                 </div>
+
+
+
 
                   <div class="project_card">
       <div class="card_img">
@@ -170,6 +155,7 @@
           <button>See project</button>
       </div>
   </div>
+-->
             </div>
         </section>
 
