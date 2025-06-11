@@ -30,6 +30,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 2px;
+    
   }
 
   .mobile_menu {
@@ -45,6 +46,7 @@ body {
   .mobile_menu p {
     padding: 1px 10px;
     background-color: #6070ff;
+
    
 
   }
@@ -88,6 +90,7 @@ body {
     display: flex;
     gap: 20px;
     list-style: none;
+    border: red;
   }
 
   .separation {
@@ -309,7 +312,7 @@ body {
     border-radius: 8px;
     padding: 12px;
     border: 1px solid#6070FF;
-    font-weight: 500px;
+    font-weight: 50px;
     color: #396df2;
     font-size: 17px;
     text-align: center;
@@ -469,6 +472,8 @@ body {
     width: 100%;
     height: 100%;
     opacity: 97%;
+    border: none;
+
   }
 
   .desktop_menu.active ul {
@@ -477,12 +482,15 @@ body {
     gap: 30px;
     list-style: none;
     padding: 30px 29px;
+    border: none;
+  
   }
 
   .desktop_menu.active ul li a {
     text-decoration: none;
-    color: #fff;
     font-size: 25px;
+    color: white;
+    border: none;
   }
 
   .mobile_menu.active p:nth-child(1) {
@@ -500,6 +508,152 @@ body {
     position: relative;
     top: -8px;
   }
+
+  /*mobile-menu pop-up modal styling*/
+  /* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+}
+
+/* Modal Content */
+.modal_content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Close Button */
+.close_btn {
+    color: #080808;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.close_btn:hover,
+.close_btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Image */
+.modal_image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+/* Project Title */
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Modal Description */
+.modal_description {
+    font-size: 16px;
+    margin: 10px 0 20px;
+}
+
+/* Technology List */
+ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none; 
+    padding: 0; 
+}
+li{
+  list-style: none;
+  gap: 15px;
+}
+
+ul li {
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 8px; 
+}
+
+/* Modal Links */
+.modal_links {
+    margin-top: 20px;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.abt_btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    gap: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.abt_btn:hover {
+    background-color: #0056b3;
+}
+/*
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 500px;
+    max-width: 90%;
+    padding: 20px;
+  }
+.modal-content .close-btn{
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.modal-content h1 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.modal-content ul {
+  display: flex;
+  gap: 10px;
+  padding-left: 10px;
+
+}
+.modal-content li{
+  font-size: 12px;
+font-weight: 500;
+color: #6070ff;
+background-color: #ebebff;
+padding: 4px 12px;
+border-radius: 8px;
+}
+*/
+
 }
 
 /* Define tablet screen styling */
@@ -553,7 +707,7 @@ body {
   }
 
   .home h1 {
-    font-size: 43px;
+    font-size: 60px;
     font-weight: 700;
     color: #172b4d;
     line-height: 52px;
@@ -562,8 +716,8 @@ body {
   }
 
   .home p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 28px;
+    line-height: 34px;
     font-weight: 400px;
     letter-spacing: 0%;
     width: 627px;
@@ -571,7 +725,7 @@ body {
 
   .home h4 {
     color: #6070ff;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .home ul {
@@ -581,7 +735,7 @@ body {
   }
 
   .separation {
-    padding: 50px 0;
+    padding: 20px 0;
     background-color: #f7f7f9;
   }
 
@@ -600,9 +754,10 @@ body {
   }
 
   .projects_heading h2 {
-    font-size: 47px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 35px;
   }
 
   .projects_heading p {
@@ -616,15 +771,15 @@ body {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 120px;
   }
 
   .project_card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 327px;
-    height: 596px;
+    width: 440px;
+    height: 700px;
     border-radius: 16px;
     gap: 15px;
     padding: 20px 16px;
@@ -638,7 +793,7 @@ body {
   }
 
   .project_card h2 {
-    font-size: 32px;
+    font-size: 42px;
     color: #172b4d;
     font-weight: bold;
   }
@@ -646,13 +801,13 @@ body {
   .card_details {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
 
   .card_sub_title {
     display: flex;
     gap: 10px;
-    font-size: 13px;
+    font-size: 33px;
   }
 
   .card_sub_title p {
@@ -667,7 +822,7 @@ body {
   }
 
   .card_list li {
-    font-size: 12px;
+    font-size: 22px;
     font-weight: 500;
     color: #6070ff;
     background-color: #ebebff;
@@ -681,7 +836,7 @@ body {
   }
 
   .card_details p {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
     color: #344563;
   }
@@ -697,7 +852,7 @@ body {
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #396df2;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500px;
     color: #396df2;
   }
@@ -781,6 +936,7 @@ body {
     color: #6070ff;
     gap: 10px;
     margin-top: 15px;
+    font-size: 30px;
   }
 
   .about_text div {
@@ -790,14 +946,14 @@ body {
   }
 
   .about_text div button {
-    width: 162px;
-    height: 48px;
+    width: 172px;
+    height: 58px;
     border-radius: 8px;
     padding: 12px;
     border: 1px solid#6070FF;
-    font-weight: 500px;
+    font-weight: 700px;
     color: #396df2;
-    font-size: 17px;
+    font-size: 19px;
     text-align: center;
     background-color: #fff;
   }
@@ -830,7 +986,7 @@ body {
     padding: 20px;
     color: #ebebff;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .contact form {
@@ -846,6 +1002,7 @@ body {
   .contact form input {
     width: 527px;
     height: 48px;
+    font-size: 25px;
     background-color: #fff;
     border: none;
     border-radius: 10px;
@@ -854,6 +1011,7 @@ body {
   .contact form textarea {
     width: 527px;
     height: 170px;
+    font-size: 25px;
     background-color: #fff;
     border: none;
     border-radius: 8px;
@@ -869,7 +1027,7 @@ body {
     width: 242px;
     height: 48px;
     color: #6070ff;
-    font-size: 17px;
+    font-size: 27px;
     background-color: #fff;
     font-weight: 500;
     text-align: center;
@@ -983,6 +1141,122 @@ body {
     position: relative;
     top: -8px;
   }
+
+  
+  /*tablet-menu pop-up modal styling*/
+  /* Modal Background */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+/* Modal Content */
+.modal_content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Close Button */
+.close_btn {
+    color: #080808;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.close_btn:hover,
+.close_btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Image */
+.modal_image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+/* Project Title */
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+p{
+  font-size: 30px;
+  padding: 10px;
+}
+li{
+  font-size: 25px;
+  white-space: nowrap;
+  gap: 0;
+  margin: 0;
+}
+
+/* Modal Description */
+.modal_description {
+    font-size: 36px;
+    margin: 10px 0 20px;
+}
+
+/* Technology List */
+ul {
+    display: flex;
+    gap: 35px;
+    list-style-type: none; 
+    padding: 0; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+li{
+  list-style: none;
+   white-space: nowrap;
+}
+
+ul li {
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 8px; 
+     white-space: nowrap;
+}
+
+/* Modal Links */
+.modal_links {
+    margin-top: 20px;
+    margin-right: 20px;
+    gap: 60px;
+}
+
+.abt_btn {
+    display: inline-block;
+    margin-right: 150px;
+    padding: 10px 15px;
+    gap: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.abt_btn:hover {
+    background-color: #0056b3;
+}
+
 }
 
 /* Define desktop screen styling */
@@ -1157,13 +1431,14 @@ body {
 
   .card_sub_title p {
     color: #172b4d;
+    font-size: 20px;
     font-weight: bold;
   }
 
   .card_sub_title ul {
     display: flex;
-    gap: 10px;
-    padding-left: 10px;
+    gap: 0px;
+    white-space: nowrap;
   }
 
   .card_list li {
@@ -1441,4 +1716,116 @@ body {
   blockquote b {
     color: #fff;
   }
+/*Desktop Pop-Up modal styling*/
+
+/* Modal Background */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 110%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); 
 }
+
+/* Modal Content */
+.modal_content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; 
+    height: 680px;
+    max-width: 350px; 
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* Close Button */
+.close_btn {
+    color: #121212;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.close_btn:hover,
+.close_btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Image */
+.modal_image {
+    
+    height: auto; 
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+/* Project Title */
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-size: 30px;
+}
+li{
+  font-size: 20px;
+  list-style: none;
+  gap: 20px;
+  display: flex;
+  text-decoration: none;
+}
+
+/* Modal Description */
+.modal_description {
+    font-size: 26px;
+    margin: 10px 0 20px;
+}
+
+/* Technology List */
+ul {
+    display: flex;
+    gap: 30px;
+    color: #396df2;
+    list-style-type: none; 
+    padding: 0; 
+}
+
+ul li {
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px; 
+}
+
+/* Modal Links */
+.modal_links {
+    margin-top: 15px;
+    gap: 30px;
+}
+
+.abt_btn {
+    display: inline-block;
+    margin-right: 170px;
+    padding: 10px 15px;
+    background-color: hsl(211, 100%, 50%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    gap: 25px;
+    margin-right: 51px;
+   
+}
+
+.abt_btn:hover {
+    background-color: #0056b3;
+    color: #ffff;
+}
+
+}
+

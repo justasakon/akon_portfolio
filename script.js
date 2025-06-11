@@ -12,21 +12,14 @@ const projectCards = [
     listOne: ['Back end Dev', 2025],
     paraTwo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     listTwo: ['HTML', 'CSS', 'JAVASCRIPT'],
-    btn: 'See Project'
+    btn: 'See Project',
+    githubLink : "https://github.com/justasakon/akon_portfolio.",
+    link:'#',
+    liveserverlink:'https://akon-portfolio-five.vercel.app/',
+    // seeSourceBtn: "#https://github.com/justasakon/akon_portfolio"
   },
 
 
-   {
-   image: './assets/images/project_cardimg1.svg',
-   headerOne: 'Tonic',
-   paraOne: 'CANOPY',
-   listOne: ['Back end Dev', 2025],
-   paraTwo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-   listTwo: ['HTML', 'CSS', 'JAVASCRIPT'],
-   btn: 'See Project'
- },
-
-
   {
    image: './assets/images/project_cardimg1.svg',
    headerOne: 'Tonic',
@@ -34,18 +27,10 @@ const projectCards = [
    listOne: ['Back end Dev', 2025],
    paraTwo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
    listTwo: ['HTML', 'CSS', 'JAVASCRIPT'],
-   btn: 'See Project'
- },
-
-
-  {
-   image: './assets/images/project_cardimg1.svg',
-   headerOne: 'Tonic',
-   paraOne: 'CANOPY',
-   listOne: ['Back end Dev', 2025],
-   paraTwo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-   listTwo: ['HTML', 'CSS', 'JAVASCRIPT'],
-   btn: 'See Project'
+   btn: 'See Project',
+    githubLink : "https://github.com/justasakon/akon_portfolio.",
+ link:'#',
+ liveserverlink:'https://akon-portfolio-five.vercel.app/',
  },
 
  
@@ -56,29 +41,17 @@ const projectCards = [
    listOne: ['Back end Dev', 2025],
    paraTwo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
    listTwo: ['HTML', 'CSS', 'JAVASCRIPT'],
-   btn: 'See Project'
+   btn: 'See Project',
+    githubLink : "https://github.com/justasakon/akon_portfolio.",
+ link:'#',
+ liveserverlink:'https://akon-portfolio-five.vercel.app/',
  },
 
- 
-  {
-   image: './assets/images/project_cardimg1.svg',
-   headerOne: 'Tonic',
-   paraOne: 'CANOPY',
-   listOne: ['Back end Dev', 2025],
-   paraTwo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-   listTwo: ['HTML', 'CSS', 'JAVASCRIPT'],
-   btn: 'See Project'
- },
 
 ];
 
-
-// Dummy modal function to prevent error
-function openModal() {
-  console.log("Modal opened");
-}
-
 function renderProjectCards(projects) {
+  console.log('yoo blise tech', projects)
   const firstDiv = document.createElement('div');
   firstDiv.classList.add('project_card');
 
@@ -122,7 +95,8 @@ function renderProjectCards(projects) {
 
   const btn = document.createElement('button');
   btn.textContent = projects.btn;
-  btn.addEventListener('click', openModal); 
+  // Use a closure to pass the specific project data
+  btn.addEventListener('click', () => openModal(projects));
 
   thirdDiv.append(headingOne, fourthDiv, paragraphTwo, listItemsTwo, btn);
   firstDiv.append(secondDiv, thirdDiv);
@@ -132,80 +106,177 @@ function renderProjectCards(projects) {
 
 const displayProjectCards = () => {
   const container = document.getElementById('project_cards');
+  container.innerHTML = '';
   projectCards.forEach((project) => {
     const projectDisplay = renderProjectCards(project);
     container.appendChild(projectDisplay);
   });
 };
 
+/*
 //popup-window to visit projects
 function openModal(project){
   const modal = document.createElement('div');
   modal.classList.add('modal');
   modal.id = "project_modal";
 
-  const modalContent = document.childElementCount('div');
-  modalContent.classList.add('modal_modal');
+  const modalContent = document.createElement('div');
+  modalContent.classList.add('modal_content');
 
-  const closeButton = document.childElementCount('span');
-  closeButton.classList.add(close_btn);
+  const closeButton = document.createElement('span');
+  closeButton.classList.add('close_btn');
   closeButton.innerHTML = "&times;";
-  closeButton.addEventListener("click",closeModal);
+  closeButton.addEventListener("click",() =>{
+    modal.style.dispaly = "none";
+  });
   modalContent.appendChild(closeButton);
 
-  const modalImage = Document.createElement('img');
+  const modalImage = document.createElement('img');
   modalImage.classList.add('modal_image');
   modalImage.src = project.image;
-  modalImage.alt = project_title;
+  modalImage.alt = project.title;
   modalContent.appendChild(modalImage);
 
   const modalTitle = document.createElement('h1');
   modalTitle.textContent = project.title;
   modalContent.appendChild(modalTitle);
-
-  const list = document.childElementCount('ul');
-  list.id = "modaltecnologies";
+// 
+   const list = document.createElement('ul');
+  list.id = "modal_tecnologies";
   project.technologies.forEach(tech => {
-    const listItems = document.createElement("li");
-    listItems.innerHTML = tech;
-    list.appendChild(listItems)})
+    const listItem = document.createElement("li");
+    listItem.textContent = tech;
+    list.appendChild(listItem);
+  });
     modalContent.appendChild(list);
 
-    const modaDescription = document.createElement("p");
-    modaDescription.classList.add("modal_description");
-    modaDescription.textContent = project.description;
-    modalContent.appendChild(modaDescription);
+    const modalDescription = document.createElement("p");
+    modalDescription.classList.add("modal_description");
+    modalDescription.textContent = project.description;
+    modalContent.appendChild(modalDescription);
     modal.appendChild(modalContent);
     document.body.appendChild(modal);
     modal.style.display="flex";
 
     const modalLink = document.createElement("div");
     modalLink.classList.add("modal_links");
-    const githHubLink = document.createElement("a");
-    githHubLink.classList.add("abt_btn");
-    githHubLink.textContent = "see source";
-    githHubLink.href = project.githHubLink;
-    githHubLink.target = "#";
-    modalLink.appendChild(githHubLink);
+    const githubLink = document.createElement("a");
+    githubLink.classList.add("abt_btn");
+    githubLink.textContent = "see Source";
+    githubLink.href = project.githubLink;
+    githubLink.target = "#";
+    modalLink.appendChild(githubLink);
 
-    const liveLink = document.childElement("a");
+    const liveLink = document.creatElement("a");
     liveLink.classList.add("abt_btn");
     liveLink.textContent = "see live";
     liveLink.hreff = project.liveLink;
-    liveLink.target = "#";
+    liveLink.target = "_blank";
     modalLink.appendChild(liveLink);
     modalContent.appendChild(modalLink);
 }
  displayProjectCards();
-Document.addEventListener("DomContentloaded", renderProjectCards);
-5
-//function for the close button on the modal
+document.addEventListener("DomContentloaded", renderProjectCards);
+
+// function for the close button on the modal
 function closeModal(){
   const modal = document.getElementById("project_modal");
   if(modal){
     modal.remove()
     window.removeEventListener("click", outsideClick);
 }
+}
+*/
+// Popup window to visit projects
+function openModal(project) {
+  const modal = document.createElement('div');
+  modal.classList.add('modal');
+  modal.id = "project_modal";
+
+  const modalContent = document.createElement('div');
+  modalContent.classList.add('modal_content');
+
+  const closeButton = document.createElement('span');
+  closeButton.classList.add('close_btn');
+  closeButton.innerHTML = "&times;";
+  closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+  modalContent.appendChild(closeButton);
+
+  
+  const modalTitle = document.createElement('h1');
+  modalTitle.textContent = project.headerOne;
+  modalTitle.classList.add("modal_title");
+  modalContent.appendChild(modalTitle);
+
+  const paraOne = document.createElement('p');
+  paraOne.textContent = project.paraOne;
+  modalContent.appendChild(paraOne);
+
+  const listOne = document.createElement('li');
+  listOne.textContent = project.listOne;
+  modalContent.appendChild(listOne);
+
+  
+  const modalImage = document.createElement('img');
+  modalImage.classList.add('modal_image');
+  modalImage.src = project.image;
+  modalImage.alt = project.headerOne;
+  modalContent.appendChild(modalImage);
+
+
+  const modalDescription = document.createElement('p');
+  modalDescription.classList.add("modal_description");
+  modalDescription.textContent = project.paraTwo; // Adjusted
+  modalContent.appendChild(modalDescription);
+
+  const list = document.createElement('ul');
+  list.classList.add('listul');
+  project.listTwo.forEach(tech => {
+    const listItem = document.createElement('li');
+    listItem.classList.add('list3')
+    listItem.textContent = tech;
+    list.appendChild(listItem);
+  });
+  modalContent.appendChild(list);
+  modal.appendChild(modalContent);
+  document.body.appendChild(modal);
+  modal.style.display = "flex";
+
+  // Links for GitHub and Live demo
+  const modalLink = document.createElement("div");
+  modalLink.classList.add("modal_links");
+  
+  const githubLink = document.createElement("a");
+  githubLink.classList.add("abt_btn");
+  githubLink.textContent = "See Source";
+  githubLink.href = project.githubLink; 
+  console.log(project)
+  githubLink.target = "_blank";
+  modalLink.appendChild(githubLink);
+
+  const liveLink = document.createElement("a");
+  liveLink.classList.add("abt_btn");
+  liveLink.textContent = "See Live";
+  liveLink.href = project.liveserverlink; 
+  liveLink.target = "_blank";
+  modalLink.appendChild(liveLink);
+  
+  modalContent.appendChild(modalLink);
+  console.log("popup")
+}
+
+displayProjectCards();
+document.addEventListener("DOMContentLoaded", displayProjectCards);
+
+// Function for the close button on the modal
+function closeModal() {
+  const modal = document.getElementById("project_modal");
+  if (modal) {
+    modal.remove();
+    window.removeEventListener("click", closeModal);
+  }
 }
 
 // Object to store about card properties
@@ -247,7 +318,7 @@ const aboutCards = [
   cards.appendChild(list);
   return cards;
  }
- // function to render About card
+//  function to render About card
  function renderaboutCards(){
   const abtCard = document.querySelector(".about_cards");
   aboutCards.forEach(about => {
@@ -256,6 +327,9 @@ const aboutCards = [
   });
  }
  document.addEventListener("DOMContentLoaded", renderaboutCards);
+
+
+ 
 
 
 
