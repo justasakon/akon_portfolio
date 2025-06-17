@@ -289,6 +289,13 @@ body {
   .about_text {
     padding-top: 40px;
   }
+  .container{
+    display: flex;
+  }
+
+  .container:hover{
+    background-color: #007bff;
+  }
 
   .about_text h2 {
     font-size: 40px;
@@ -650,7 +657,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 110%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.7);
   }
@@ -659,7 +666,7 @@ body {
   .modal_content {
     background-color: #fff;
     margin: 15% auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #888;
     width: 80%;
     max-width: 600px;
@@ -691,21 +698,21 @@ body {
   /* Modal Description */
   .modal_description {
     font-size: 16px;
-    margin: 10px 0 20px;
+    margin: 10px 0 10px;
   }
 
   /* Modal Links */
   .modal_links {
     margin-top: 20px;
     margin-right: 20px;
-    gap: 10px;
+    gap: 20px;
   }
 
   .abt_btn {
     display: inline-block;
     margin-right: 10px;
     padding: 10px 15px;
-    gap: 10px;
+    gap: 20px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
