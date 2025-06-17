@@ -289,13 +289,6 @@ body {
   .about_text {
     padding-top: 40px;
   }
-  .container{
-    display: flex;
-  }
-
-  .container:hover{
-    background-color: #007bff;
-  }
 
   .about_text h2 {
     font-size: 40px;
