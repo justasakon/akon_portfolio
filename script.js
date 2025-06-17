@@ -281,25 +281,25 @@ closeModal();
 
 // function to creat Card
 // function createAboutCards(about) {
-  // const cards = document.createElement('div');
-  // cards.classList.add('about_card');
-  // const pics = document.createElement('img');
-  // pics.src = about.image;
-  // pics.alt = about.heading;
-  // cards.appendChild(pics);
-  // const head = document.createComment('h3');
-  // head.innerHTML = about.heading;
-  // cards.appendChild(head);
-  // const lists = document.createElement('ul');
-  // about.language.forEach((content) => {
-    // const listItems = document.createElement('li');
-    // listItems.innerHTML = content;
-    // lists.appendChild(listItems);
-  // });
-  // cards.appendChild(lists);
-  // return cards;
+// const cards = document.createElement('div');
+// cards.classList.add('about_card');
+// const pics = document.createElement('img');
+// pics.src = about.image;
+// pics.alt = about.heading;
+// cards.appendChild(pics);
+// const head = document.createComment('h3');
+// head.innerHTML = about.heading;
+// cards.appendChild(head);
+// const lists = document.createElement('ul');
+// about.language.forEach((content) => {
+// const listItems = document.createElement('li');
+// listItems.innerHTML = content;
+// lists.appendChild(listItems);
+// });
+// cards.appendChild(lists);
+// return cards;
 // }
-// 
+//
 function renderProjectCards(projects) {
   // console.log('yoo blise tech', projects);
   const firstDiv = document.createElement('div');
@@ -368,11 +368,11 @@ document.addEventListener('DOMContentLoaded', displayProjectCards());
 
 //  function to render About card
 // function renderaboutCards() {
-  // const abtCard = document.querySelector('.about_cards');
-  // abtCard.forEach((about) => {
-    // const aboutCard = createAboutCards(about);
-    // abtCard.appendChild(aboutCard);
-  // });
+// const abtCard = document.querySelector('.about_cards');
+// abtCard.forEach((about) => {
+// const aboutCard = createAboutCards(about);
+// abtCard.appendChild(aboutCard);
+// });
 // }
 // document.addEventListener('DOMContentLoaded', renderaboutCards);
-// 
+//
